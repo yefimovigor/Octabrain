@@ -7,50 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		788900391C0F916900C13061 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 788900381C0F916900C13061 /* main.m */; };
-		7889003C1C0F916900C13061 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7889003B1C0F916900C13061 /* AppDelegate.m */; };
-		7889003F1C0F916900C13061 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7889003E1C0F916900C13061 /* ViewController.m */; };
-		788900421C0F916A00C13061 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 788900401C0F916A00C13061 /* Main.storyboard */; };
-		788900441C0F916A00C13061 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 788900431C0F916A00C13061 /* Images.xcassets */; };
-		788900471C0F916A00C13061 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 788900451C0F916A00C13061 /* LaunchScreen.xib */; };
-		788900531C0F916A00C13061 /* Octabrain_testTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 788900521C0F916A00C13061 /* Octabrain_testTests.m */; };
+		788900641C0F932800C13061 /* OTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 788900601C0F932800C13061 /* OTAppDelegate.m */; };
+		788900651C0F932800C13061 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 788900611C0F932800C13061 /* main.m */; };
+		788900661C0F932800C13061 /* OTMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 788900631C0F932800C13061 /* OTMainViewController.m */; };
+		788900681C0F933A00C13061 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 788900671C0F933A00C13061 /* Images.xcassets */; };
+		7889006B1C0F934D00C13061 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 788900691C0F934D00C13061 /* LaunchScreen.xib */; };
+		7889006C1C0F934D00C13061 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7889006A1C0F934D00C13061 /* Main.storyboard */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		7889004D1C0F916A00C13061 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7889002B1C0F916800C13061 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 788900321C0F916900C13061;
-			remoteInfo = "Octabrain test";
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		788900331C0F916900C13061 /* Octabrain test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Octabrain test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		788900371C0F916900C13061 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		788900381C0F916900C13061 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		7889003A1C0F916900C13061 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		7889003B1C0F916900C13061 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		7889003D1C0F916900C13061 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		7889003E1C0F916900C13061 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		788900411C0F916A00C13061 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		788900431C0F916A00C13061 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		788900461C0F916A00C13061 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		7889004C1C0F916A00C13061 /* Octabrain testTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Octabrain testTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		788900511C0F916A00C13061 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		788900521C0F916A00C13061 /* Octabrain_testTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Octabrain_testTests.m; sourceTree = "<group>"; };
+		7889005F1C0F932800C13061 /* OTAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OTAppDelegate.h; path = Code/OTAppDelegate.h; sourceTree = "<group>"; };
+		788900601C0F932800C13061 /* OTAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OTAppDelegate.m; path = Code/OTAppDelegate.m; sourceTree = "<group>"; };
+		788900611C0F932800C13061 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Code/main.m; sourceTree = "<group>"; };
+		788900621C0F932800C13061 /* OTMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OTMainViewController.h; path = Code/OTMainViewController.h; sourceTree = "<group>"; };
+		788900631C0F932800C13061 /* OTMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OTMainViewController.m; path = Code/OTMainViewController.m; sourceTree = "<group>"; };
+		788900671C0F933A00C13061 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Resources/Images.xcassets; sourceTree = "<group>"; };
+		788900691C0F934D00C13061 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LaunchScreen.xib; path = "User interface/LaunchScreen.xib"; sourceTree = "<group>"; };
+		7889006A1C0F934D00C13061 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = "User interface/Main.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		788900301C0F916900C13061 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		788900491C0F916A00C13061 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -64,7 +43,6 @@
 			isa = PBXGroup;
 			children = (
 				788900351C0F916900C13061 /* Octabrain test */,
-				7889004F1C0F916A00C13061 /* Octabrain testTests */,
 				788900341C0F916900C13061 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -73,7 +51,6 @@
 			isa = PBXGroup;
 			children = (
 				788900331C0F916900C13061 /* Octabrain test.app */,
-				7889004C1C0F916A00C13061 /* Octabrain testTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -81,42 +58,41 @@
 		788900351C0F916900C13061 /* Octabrain test */ = {
 			isa = PBXGroup;
 			children = (
-				7889003A1C0F916900C13061 /* AppDelegate.h */,
-				7889003B1C0F916900C13061 /* AppDelegate.m */,
-				7889003D1C0F916900C13061 /* ViewController.h */,
-				7889003E1C0F916900C13061 /* ViewController.m */,
-				788900401C0F916A00C13061 /* Main.storyboard */,
-				788900431C0F916A00C13061 /* Images.xcassets */,
-				788900451C0F916A00C13061 /* LaunchScreen.xib */,
-				788900361C0F916900C13061 /* Supporting Files */,
+				7889005E1C0F92C100C13061 /* Code */,
+				788900371C0F916900C13061 /* Info.plist */,
+				7889005D1C0F927200C13061 /* Resources */,
+				7889005C1C0F91F900C13061 /* User interface */,
 			);
 			path = "Octabrain test";
 			sourceTree = "<group>";
 		};
-		788900361C0F916900C13061 /* Supporting Files */ = {
+		7889005C1C0F91F900C13061 /* User interface */ = {
 			isa = PBXGroup;
 			children = (
-				788900371C0F916900C13061 /* Info.plist */,
-				788900381C0F916900C13061 /* main.m */,
+				788900691C0F934D00C13061 /* LaunchScreen.xib */,
+				7889006A1C0F934D00C13061 /* Main.storyboard */,
 			);
-			name = "Supporting Files";
+			name = "User interface";
 			sourceTree = "<group>";
 		};
-		7889004F1C0F916A00C13061 /* Octabrain testTests */ = {
+		7889005D1C0F927200C13061 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				788900521C0F916A00C13061 /* Octabrain_testTests.m */,
-				788900501C0F916A00C13061 /* Supporting Files */,
+				788900671C0F933A00C13061 /* Images.xcassets */,
 			);
-			path = "Octabrain testTests";
+			name = Resources;
 			sourceTree = "<group>";
 		};
-		788900501C0F916A00C13061 /* Supporting Files */ = {
+		7889005E1C0F92C100C13061 /* Code */ = {
 			isa = PBXGroup;
 			children = (
-				788900511C0F916A00C13061 /* Info.plist */,
+				788900611C0F932800C13061 /* main.m */,
+				7889005F1C0F932800C13061 /* OTAppDelegate.h */,
+				788900601C0F932800C13061 /* OTAppDelegate.m */,
+				788900621C0F932800C13061 /* OTMainViewController.h */,
+				788900631C0F932800C13061 /* OTMainViewController.m */,
 			);
-			name = "Supporting Files";
+			name = Code;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,24 +115,6 @@
 			productReference = 788900331C0F916900C13061 /* Octabrain test.app */;
 			productType = "com.apple.product-type.application";
 		};
-		7889004B1C0F916A00C13061 /* Octabrain testTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 788900591C0F916A00C13061 /* Build configuration list for PBXNativeTarget "Octabrain testTests" */;
-			buildPhases = (
-				788900481C0F916A00C13061 /* Sources */,
-				788900491C0F916A00C13061 /* Frameworks */,
-				7889004A1C0F916A00C13061 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				7889004E1C0F916A00C13061 /* PBXTargetDependency */,
-			);
-			name = "Octabrain testTests";
-			productName = "Octabrain testTests";
-			productReference = 7889004C1C0F916A00C13061 /* Octabrain testTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -168,10 +126,6 @@
 				TargetAttributes = {
 					788900321C0F916900C13061 = {
 						CreatedOnToolsVersion = 6.4;
-					};
-					7889004B1C0F916A00C13061 = {
-						CreatedOnToolsVersion = 6.4;
-						TestTargetID = 788900321C0F916900C13061;
 					};
 				};
 			};
@@ -189,7 +143,6 @@
 			projectRoot = "";
 			targets = (
 				788900321C0F916900C13061 /* Octabrain test */,
-				7889004B1C0F916A00C13061 /* Octabrain testTests */,
 			);
 		};
 /* End PBXProject section */
@@ -199,16 +152,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				788900421C0F916A00C13061 /* Main.storyboard in Resources */,
-				788900471C0F916A00C13061 /* LaunchScreen.xib in Resources */,
-				788900441C0F916A00C13061 /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7889004A1C0F916A00C13061 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				7889006C1C0F934D00C13061 /* Main.storyboard in Resources */,
+				7889006B1C0F934D00C13061 /* LaunchScreen.xib in Resources */,
+				788900681C0F933A00C13061 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,48 +165,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7889003F1C0F916900C13061 /* ViewController.m in Sources */,
-				7889003C1C0F916900C13061 /* AppDelegate.m in Sources */,
-				788900391C0F916900C13061 /* main.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		788900481C0F916A00C13061 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				788900531C0F916A00C13061 /* Octabrain_testTests.m in Sources */,
+				788900661C0F932800C13061 /* OTMainViewController.m in Sources */,
+				788900651C0F932800C13061 /* main.m in Sources */,
+				788900641C0F932800C13061 /* OTAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		7889004E1C0F916A00C13061 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 788900321C0F916900C13061 /* Octabrain test */;
-			targetProxy = 7889004D1C0F916A00C13061 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		788900401C0F916A00C13061 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				788900411C0F916A00C13061 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		788900451C0F916A00C13061 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				788900461C0F916A00C13061 /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		788900541C0F916A00C13061 /* Debug */ = {
@@ -365,40 +276,6 @@
 			};
 			name = Release;
 		};
-		7889005A1C0F916A00C13061 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "Octabrain testTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Octabrain test.app/Octabrain test";
-			};
-			name = Debug;
-		};
-		7889005B1C0F916A00C13061 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "Octabrain testTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Octabrain test.app/Octabrain test";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -416,14 +293,6 @@
 			buildConfigurations = (
 				788900571C0F916A00C13061 /* Debug */,
 				788900581C0F916A00C13061 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		788900591C0F916A00C13061 /* Build configuration list for PBXNativeTarget "Octabrain testTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7889005A1C0F916A00C13061 /* Debug */,
-				7889005B1C0F916A00C13061 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
