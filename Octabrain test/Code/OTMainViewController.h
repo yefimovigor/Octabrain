@@ -15,6 +15,7 @@
 //IBOutlets
 @property IBOutlet UIScrollView* scrollView;
 @property IBOutletCollection(UITextView) NSArray* textViews;
+@property IBOutletCollection(NSLayoutConstraint) NSArray* textViewsHeightConstraints;
 
 //Toolbar
 @property UIToolbar* keyboardToolbar;

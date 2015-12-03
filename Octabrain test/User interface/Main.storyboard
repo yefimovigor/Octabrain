@@ -108,6 +108,11 @@
                         <outletCollection property="textViews" destination="F4w-lK-CpT" id="gCQ-9N-mBs"/>
                         <outletCollection property="textViews" destination="jAJ-Lz-oMk" id="oMD-Ci-RTZ"/>
                         <outletCollection property="textViews" destination="xcx-QK-GA0" id="hdR-0Q-MJP"/>
+                        <outletCollection property="textViewsHeightConstraints" destination="00q-RN-SPU" id="Vgw-6t-3Lr"/>
+                        <outletCollection property="textViewsHeightConstraints" destination="Azy-m3-Iaf" id="6Ds-lG-4v1"/>
+                        <outletCollection property="textViewsHeightConstraints" destination="dke-TJ-3n8" id="hl4-k5-HCm"/>
+                        <outletCollection property="textViewsHeightConstraints" destination="Q1K-4O-7A6" id="FdK-hW-n7W"/>
+                        <outletCollection property="textViewsHeightConstraints" destination="qbg-Gw-bwj" id="8PA-LR-tUA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

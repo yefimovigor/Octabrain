@@ -18,21 +18,21 @@
 
 #pragma mark - Variables
 
-CGPoint scrollViewContentOffset;
 UITextView* editedTextView;
+CGPoint scrollViewContentOffset;
 
 
 
 
 #pragma mark - Handlers
 
-- (void) handleKeyboardDidHideNotification:(id)sender {
+- (void) handleKeyboardDidHideNotification:(NSNotification*)notification {
 }
 
 
 
 
-- (void) handleKeyboardDidShowNotification:(id)sender {
+- (void) handleKeyboardDidShowNotification:(NSNotification*)notification {
 }
 
 
@@ -88,10 +88,35 @@ UITextView* editedTextView;
 
 #pragma mark - Text view
 
+- (void) changeHeightConstraintForEditedTextViewTo:(float)heightConstraintValue {
+    //Searching index of edited text view
+    int index=0;
+    for (UITextView* textView in self.textViews) {
+        if ([editedTextView isEqual:textView])break;
+        index++;
+    }
+
+    //Changing
+    NSLayoutConstraint* heightConstraint=[self.textViewsHeightConstraints objectAtIndex:index];
+    [UIView animateWithDuration:0.5f
+                     animations:^{
+                         heightConstraint.constant=heightConstraintValue;
+                         [self.scrollView layoutIfNeeded];
+                     }
+     ];
+}
+
+
+
+
 - (void) onTextViewEditMode {
     if (editedTextView) {
         float dy=editedTextView.frame.origin.y-[[UIApplication sharedApplication] statusBarFrame].size.height;
         [self.scrollView setContentOffset:(CGPoint){0,dy} animated:YES];
+
+        [self changeHeightConstraintForEditedTextViewTo:150];
+
+        [editedTextView scrollRangeToVisible:[editedTextView selectedRange]];
     }
 }
 
@@ -100,6 +125,8 @@ UITextView* editedTextView;
 
 - (void) offTextViewEditMode {
     [self.scrollView setContentOffset:(CGPoint){0,scrollViewContentOffset.y} animated:YES];
+
+    [self changeHeightConstraintForEditedTextViewTo:editedTextView.contentSize.height];
 }
 
 
