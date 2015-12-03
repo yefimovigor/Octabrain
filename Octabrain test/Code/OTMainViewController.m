@@ -19,6 +19,7 @@
 #pragma mark - Variables
 
 UITextView* editedTextView;
+NSString* editedTextViewText;
 CGPoint scrollViewContentOffset;
 
 
@@ -46,6 +47,7 @@ CGPoint scrollViewContentOffset;
 
 
 - (void)handleKeyboardToolbarDoneButtonPressing:(id)sender {
+    editedTextViewText=editedTextView.text;
     [self resignKeyboard];
 }
 
@@ -111,6 +113,8 @@ CGPoint scrollViewContentOffset;
 
 - (void) onTextViewEditMode {
     if (editedTextView) {
+        editedTextViewText=editedTextView.text;
+
         float dy=editedTextView.frame.origin.y-[[UIApplication sharedApplication] statusBarFrame].size.height;
         [self.scrollView setContentOffset:(CGPoint){0,dy} animated:YES];
 
@@ -124,6 +128,8 @@ CGPoint scrollViewContentOffset;
 
 
 - (void) offTextViewEditMode {
+    editedTextView.text=editedTextViewText;
+
     [self.scrollView setContentOffset:(CGPoint){0,scrollViewContentOffset.y} animated:YES];
 
     [self changeHeightConstraintForEditedTextViewTo:editedTextView.contentSize.height];
