@@ -16,7 +16,27 @@
 
 @implementation OTMainViewController
 
+#pragma mark - Variables
+
+CGPoint scrollViewContentOffset;
+UITextView* editedTextView;
+
+
+
+
 #pragma mark - Handlers
+
+- (void) handleKeyboardDidHideNotification:(id)sender {
+}
+
+
+
+
+- (void) handleKeyboardDidShowNotification:(id)sender {
+}
+
+
+
 
 - (void)handleKeyboardToolbarCancelButtonPressing:(id)sender {
     [self resignKeyboard];
@@ -66,6 +86,65 @@
 
 
 
+#pragma mark - Text view
+
+- (void) onTextViewEditMode {
+    if (editedTextView) {
+        float dy=editedTextView.frame.origin.y-[[UIApplication sharedApplication] statusBarFrame].size.height;
+        [self.scrollView setContentOffset:(CGPoint){0,dy} animated:YES];
+    }
+}
+
+
+
+
+- (void) offTextViewEditMode {
+    [self.scrollView setContentOffset:(CGPoint){0,scrollViewContentOffset.y} animated:YES];
+}
+
+
+
+
+#pragma mark - UIScrollViewDelegate
+
+- (void) scrollViewDidScroll:(UIScrollView*)scrollView {
+    scrollViewContentOffset=self.scrollView.contentOffset;
+}
+
+
+
+
+#pragma mark - UITextViewDelegate
+
+- (BOOL) textViewShouldBeginEditing:(UITextView*)textView {
+    editedTextView=textView;
+    return YES;
+}
+
+
+
+
+- (BOOL) textViewShouldEndEditing:(UITextView*)textView {
+    return YES;
+}
+
+
+
+
+- (void)textViewDidBeginEditing:(UITextView*)textView {
+    [self onTextViewEditMode];
+}
+
+
+
+
+- (void)textViewDidEndEditing:(UITextView*)textView {
+    [self offTextViewEditMode];
+}
+
+
+
+
 #pragma mark - UIViewController (view lifecycle)
 
 - (void) viewDidLoad {
@@ -74,13 +153,30 @@
 
     //Properties initialization
 
+    //Scroll view
+    self.scrollView.delegate=self;
+
     //Toolbar
     [self initKeyboardToolbar];
 
-
-    //Toolbar binding to the keyboard
-    for (UITextView* textView in self.textViews)
+    //Text views
+    for (UITextView* textView in self.textViews) {
         textView.inputAccessoryView=self.keyboardToolbar;
+        textView.delegate=self;
+    }
+
+
+    //Subscription to notifications
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(handleKeyboardDidHideNotification:)
+                                                 name:UIKeyboardDidHideNotification
+                                               object:nil
+     ];
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(handleKeyboardDidShowNotification:)
+                                                 name:UIKeyboardDidShowNotification
+                                               object:nil
+     ];
 }
 
 

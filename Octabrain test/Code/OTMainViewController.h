@@ -8,7 +8,7 @@
 
 
 
-@interface OTMainViewController: UIViewController
+@interface OTMainViewController: UIViewController <UIScrollViewDelegate, UITextViewDelegate>
 
 //User interface
 
