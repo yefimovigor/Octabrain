@@ -11,7 +11,12 @@
 @interface OTMainViewController: UIViewController
 
 //User interface
+
+//IBOutlets
 @property IBOutlet UIScrollView* scrollView;
-@property IBOutletCollection(UITextView) NSArray* textFields;
+@property IBOutletCollection(UITextView) NSArray* textViews;
+
+//Toolbar
+@property UIToolbar* keyboardToolbar;
 
 @end

@@ -103,11 +103,11 @@
                     <size key="freeformSize" width="600" height="600"/>
                     <connections>
                         <outlet property="scrollView" destination="BuK-Iz-i3m" id="6en-Ca-7cN"/>
-                        <outletCollection property="textFields" destination="xVR-aR-3et" id="H8e-bd-Q70"/>
-                        <outletCollection property="textFields" destination="TQk-j3-gQt" id="drT-wz-gZ8"/>
-                        <outletCollection property="textFields" destination="F4w-lK-CpT" id="N4g-Kw-vPl"/>
-                        <outletCollection property="textFields" destination="jAJ-Lz-oMk" id="pEI-it-Bow"/>
-                        <outletCollection property="textFields" destination="xcx-QK-GA0" id="cdM-N4-2RB"/>
+                        <outletCollection property="textViews" destination="xVR-aR-3et" id="0ss-M2-nSX"/>
+                        <outletCollection property="textViews" destination="TQk-j3-gQt" id="qg7-hV-R2t"/>
+                        <outletCollection property="textViews" destination="F4w-lK-CpT" id="gCQ-9N-mBs"/>
+                        <outletCollection property="textViews" destination="jAJ-Lz-oMk" id="oMD-Ci-RTZ"/>
+                        <outletCollection property="textViews" destination="xcx-QK-GA0" id="hdR-0Q-MJP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
