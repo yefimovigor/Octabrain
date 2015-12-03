@@ -18,8 +18,14 @@
 
 #pragma mark - UIViewController (view lifecycle)
 
-- (void)viewDidLoad {
+- (void) viewDidLoad {
     [super viewDidLoad];
+}
+
+
+
+
+- (void)viewDidAppear:(BOOL)animated {
 }
 
 @end

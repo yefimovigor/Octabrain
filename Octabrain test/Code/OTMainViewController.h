@@ -9,4 +9,9 @@
 
 
 @interface OTMainViewController: UIViewController
+
+//User interface
+@property IBOutlet UIScrollView* scrollView;
+@property IBOutletCollection(UITextView) NSArray* textFields;
+
 @end
